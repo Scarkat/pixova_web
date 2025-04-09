@@ -49,16 +49,16 @@ h2 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
   padding: 1rem;
   margin: 0 auto;
-  max-width: 800px; /* Controla el ancho total */
-  width: 100%; /* Asegura que se adapte al ancho */
+  max-width: 800px; 
+  width: 100%; 
 }
 
 .card {
-  width: 100%; /* Ocupa el 100% de su celda en la grilla */
+  width: 100%; 
   background: #333;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -177,7 +177,7 @@ h2 {
 
 @media (max-width: 768px) {
   .cards {
-    grid-template-columns: 1fr; /* Stack on smaller screens */
+    grid-template-columns: 1fr; 
     gap: 0.5rem;
   }
   .card {
