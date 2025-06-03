@@ -1,0 +1,121 @@
+.newsletter_container {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 30px;
+    background:
+        linear-gradient(rgba(14, 17, 145, 0.5), rgba(0, 27, 177, 0.541)),
+        url("../img/PIXGIF3.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    gap: 1rem;
+}
+
+.gradiant_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter_texto_pq {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.newsletter_texto_grd {
+    font-size: 10rem;
+    font-weight: bold;
+    margin: 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    
+}
+
+.rainbow_text {
+    background: linear-gradient(90deg, red, orange, yellow, rgb(4, 255, 4), blue, rgb(149, 0, 255), violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+input {
+    width: 50%;
+    height: 60px;
+    font-size: 1.5em;
+    padding: 0 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    background-color: #0000008a;
+    color: #ffffff;
+}
+
+.newsletter_btn {
+    font-size: large;
+    border: 2px solid #ffffff;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 25px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter_btn:hover,
+.newsletter_btn:active {
+    border: 2px solid #000000;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .newsletter_texto_pq {
+        font-size: 1.5rem;
+    }
+
+    .newsletter_texto_grd {
+        font-size: 3rem;
+    }
+
+    input {
+        width: 80%;
+        height: 50px;
+        font-size: 1.2em;
+    }
+
+    .newsletter_btn {
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter_texto_pq {
+        font-size: 1.2rem;
+    }
+
+    .newsletter_texto_grd {
+        font-size: 2.2rem;
+    }
+
+    input {
+        width: 100%;
+        height: 45px;
+        font-size: 1em;
+    }
+
+    .newsletter_btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+}

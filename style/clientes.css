@@ -10,7 +10,7 @@ body {
     background-color: black;
 }
 
-.clientes-section {
+.clientes_container {
     min-height: 100vh;
     padding: 4rem 2rem;
     background: 
@@ -19,9 +19,12 @@ body {
             rgba(47, 39, 73, 0.74)
         ),
         black;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 .clientes-title {

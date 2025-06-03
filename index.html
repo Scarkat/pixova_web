@@ -7,32 +7,33 @@
     <link rel="stylesheet" href="style/clientes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="./multimedia.css">
-    <link rel="stylesheet" href="./newsletter.css">
-    <link rel="stylesheet" href="./style/intro.css">
-    <link rel="stylesheet" href="serv.css">
+    <link rel="stylesheet" href="style/multimedia.css">
+    <link rel="stylesheet" href="style/newsletter.css">
+    <link rel="stylesheet" href="style/intro.css">
+    <link rel="stylesheet" href="style/serv.css">
     <title>Pixova Web</title>
 </head>
 <body>
     <nav class="topbar">
-        <img src="./img/pixovaLogo.png" alt="logo">
+        <a href="#inicio">
+          <img src="./img/pixovaLogo.png" alt="logo">
+        </a>
         <a href="#"><i class="fa fa-reorder"></i></a>
     </nav>
+
     <div class="off-screen-menu">
-        <a href="">> INICIO</a>
-        <a href="">> SERVICIOS</a>
-        <a href="">> EVENTOS</a>
-        <a href="">> NUESTROS CLIENTES</a>
-        <a href="">> CONTACTO</a>
+        <a href="#inicio">> INICIO</a>
+        <a href="#servicios">> SERVICIOS</a>
+        <a href="#eventos">> EVENTOS</a>
+        <a href="#clientes">> CLIENTES</a>
+        <a href="#contacto">> CONTACTO</a>
     </div>
-    <div class="intro-body">
-        <img src="img/pixovaLogo.png" alt="intro-logo">
+   
+    <div class="intro-body" id="inicio">
+        <img src="img/PIXLOGO1.png" alt="intro-logo">
     </div>
 
-    <script src="js/script.js"></script>
-
-    <section class="servicios">
-
+    <section class="servicios_container fade-in" id="servicios">
         <h2>Nuestros Servicios</h2>
     
       <div class="cards">
@@ -60,7 +61,7 @@
             <div class="card-text">
               <div class="card-title">Servicios Rigging</div>
               <div class="card-description">
-                Ofrecemos servicios de rigging de alta calidad con un equipo certificado, asegurando seguridad y eficiencia en eventos en vivo, congresos, exposiciones y conciertos.
+                Contamos con servicios de rigging de alta calidad con un equipo certificado, asegurando seguridad y eficiencia en eventos en vivo, congresos, exposiciones y conciertos.
               </div>
             </div>
           </div>
@@ -75,7 +76,7 @@
             <div class="card-text">
               <div class="card-title">Pantallas LED de Gran Formato</div>
               <div class="card-description">
-                Ofrecemos diseños personalizados en pantallas LED, acompañando a nuestros clientes desde la idea inicial hasta la producción final, con enfoque en creatividad, seguridad y detalle.
+                Realizamos diseños personalizados en pantallas LED, acompañando a nuestros clientes desde la idea inicial hasta la producción final, con enfoque en creatividad, seguridad y detalle.
               </div>
             </div>
           </div>
@@ -100,12 +101,12 @@
           <div class="card-content">
             <div class="card-image">
               <img src="img/maquinas.jpg" alt="Generadores Electricos">
-              <div class="card-title-overlay pantallas-title">Generadores Electricos</div>
+              <div class="card-title-overlay pantallas-title">Generadores Eléctricos</div>
             </div>
             <div class="card-text">
               <div class="card-title">Generadores Electricos</div>
               <div class="card-description">
-                Déjanos respaldar tu evento en caso de cualquier pérdida de energía del venue. Contamos con generadores de diversas capacidades para tsan importantes eventos.
+                Déjanos respaldar tu evento en caso de cualquier pérdida de energía del venue. Contamos con generadores de diversas capacidades para tus importantes eventos.
               </div>
             </div>
           </div>
@@ -115,7 +116,7 @@
           <div class="card-content">
             <div class="card-image">
               <img src="img/iluminacion.jpg" alt="Iluminacion / Audio">
-              <div class="card-title-overlay pantallas-title">Iluminacion / Audio</div>
+              <div class="card-title-overlay pantallas-title">Iluminación / Audio</div>
             </div>
             <div class="card-text">
               <div class="card-title">Iluminacion / Audio</div>
@@ -128,30 +129,42 @@
       </div>
     </section>
 
-    <div class="multimedia_container">
+    <div class="multimedia_container fade-in" id="eventos">
         <div class="carousel">
+          <h1 class="clientes-title">Nuestros Eventos</h1>
             <div class="carousel-images" id="carouselImages">
-              <img src="./img/Muffin.jpg" alt="1">
-              <img src="./img/Muffin.jpg" alt="2">
-              <img src="./img/Muffin.jpg" alt="3">
+              <img src="./img/PX1.jpg" alt="1">
+              <img src="./img/PX2.jpg" alt="2">
+              <img src="./img/PX3.jpg" alt="3">
+              <img src="./img/PX4.jpg" alt="4">
+              <img src="./img/PX5.jpg" alt="5">
+              <img src="./img/PX6.jpg" alt="6">
+              <img src="./img/PX7.jpg" alt="7">
+              <img src="./img/PX8.jpg" alt="8">
+              <img src="./img/PX9.jpg" alt="9">
+              <img src="./img/PX10.jpg" alt="10">
+              <img src="./img/PX11.jpg" alt="11">
+              <img src="./img/PX12.jpg" alt="12">
+        
             </div>
         </div>
         <div class="nav left" onclick="prevSlide()">&#10094;</div>
         <div class="nav right" onclick="nextSlide()">&#10095;</div>
     </div>
 
-    <div class="newsletter_container">
-        <h3 class="newsletter_texto_pq">Recibe ofertas y promociones<br> suscribiéndote a nuestro:</h3>
+    <div class="newsletter_container fade-in">
+        <h3 class="newsletter_texto_pq">Recibe ofertas y promociones suscribiéndote a nuestro</h3>
         <div class="gradiant_text_container">
-            <h1 class="newsletter_texto_grd">NEWS</h1>
-            <h1 class="newsletter_texto_grd rainbow_text">LETTER</h1>
+            <h1 class="newsletter_texto_grd">
+            NEWS<span class="rainbow_text">LETTER</span>
+            </h1>
         </div>
         <input type="email" id="email" name="email" placeholder="persona123@example.com">
         <button class="newsletter_btn">REGISTRARSE</button>
     </div>
 
 
-    <section class="clientes-section">
+    <section class="clientes_container fade-in" id="clientes">
         <h1 class="clientes-title">Nuestros Clientes</h1>
         <div class="clientes-filas">
             <div class="fila">
@@ -173,11 +186,52 @@
                 <img src="img/clientes/Crea .png" alt="CREA">
             </div>
         </div>
-    </section>  
-    <script src="js/intro.js"></script>
+    </section>
 
-    
+    <section class="contacto_container fade-in" id="contacto">
+      <div class="contacto-body">
+        <h1 class="contacto-title">CONTACTO Y HORARIO</h1>
+        <div class="contacto-info-row">
+          <div class="contacto-info-box metodos-contacto">
+            <h2>Métodos de contacto</h2>
+            <div class="contact-row">
+              <i class="fa fa-map-pin" aria-hidden="true"></i>
+              <span>Calle 29 212a, 97070 Mérida, Yucatán, Mexico</span>
+            </div>
+            <div class="contact-row">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>9994539034</span>
+            </div>
+            <div class="contact-row">
+              <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              <span>pgomez@pixovapro.com.mx</span>
+            </div>
+          </div>
+          <div class="contacto-info-box horarios">
+          <h2>Horarios</h2>
+          <div class="horario-row">
+            <span><strong>Lunes a Viernes:</strong> 09:00 - 18:00</span>
+          </div>
+          <div class="horario-row">
+            <span><strong>Sábado:</strong> 09:00 - 13:00</span>
+          </div>
+          <div class="horario-row">
+            <span><strong>Domingo:</strong> Cerrado</span>
+          </div>
+        </div>
+        </div>
+
+        <div class="contacto-desc">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <h1 class="contacto-desc header">
+            DISPONIBILIDAD 24/7 VÍA <span class="whatsapp-green">WHATSAPP</span>
+          </h1>
+          
+        </div>
+      </div>
+  </section>
+    <script src="js/intro.js"></script>
+    <script src="js/multimedia.js"></script>
 </body>
 
-<script src="./multimedia.js"></script>
 </html>
