@@ -8,7 +8,8 @@ function cargarServicios() {
     fetch(API_BASE_URL)
         .then(response => response.json())
         .then(data => {
-            renderServicios(data);
+            console.log(data);
+            renderServicios(data.results);
         })
         .catch(error => {
             console.error('Error al cargar servicios:', error);
