@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixova Admin - Servicios</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <img src="../img/pixovaLogo.png" alt="Pixova Logo" class="logo">
+            <div class="user-info">
+                <img src="../img/default_user.png" alt="Usuario" class="user-avatar">
+                <span class="user-name">Valeria Herrera</span>
+            </div>
+            <nav class="admin-menu">
+                <a href="servicios.html" class="menu-link active">Servicios</a>
+                <a href="#" class="menu-link disabled">Multimedia</a>
+                <a href="#" class="menu-link disabled">Clientes</a>
+                <a href="#" class="menu-link disabled">Contactáctanos</a>
+                <a href="#" class="menu-link disabled">Newsletter</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1 class="section-title">Servicios</h1>
+            <table class="admin-table" id="servicios-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los servicios dinámicamente -->
+                </tbody>
+            </table>
+            <button class="add-btn" id="add-servicio-btn">Añadir elemento +</button>
+        </main>
+    </div>
+    <script src="js/servicios-admin.js"></script>
+</body>
+</html> 
