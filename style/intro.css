@@ -201,6 +201,22 @@
     margin-right: 0.5rem;
 }
 
+.contacto-btn {
+    background-color: #1a1a3d;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 .metodos-contacto .contact-row {
   display: flex;
   align-items: center;
